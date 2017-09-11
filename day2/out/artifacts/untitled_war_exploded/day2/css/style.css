@@ -1,0 +1,28 @@
+body {
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 95px;
+	padding-right: 95px;
+	font-family: "Tahoma", sans-serif; /* backup font included */
+	font-size: 11px;
+}
+body p.opening{
+	line-height: 20px;
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+}
+ul li{
+	font-family: "consolas", monospace; /* backup font included */
+}
+a{
+	color:blue; /* For copying purposes */
+}
+.red-text{
+	color: red;
+}
+.underlined-green-text{
+	color: green;
+	text-decoration: underline;
+}
