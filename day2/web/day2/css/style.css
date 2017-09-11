@@ -1,0 +1,35 @@
+body {
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 95px;
+	padding-right: 95px;
+	font-family: "Tahoma";
+	font-size: 11px;
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: lighter;
+}
+ul li{
+	font-family: "consolas";
+}
+a{
+	color:blue; /* Copy y hệt file DOC, nếu không cần thiết có thể loại bỏ*/
+}
+.important-text{
+	color: red;
+	font-style: italic;
+}
+.most-important-text{
+	color:red;
+	font-weight: bold;
+}
+.name-text{
+	font-weight: bold;
+}
+.quotes{
+	color: green;
+	text-decoration: underline;
+	font-style: italic;
+}
