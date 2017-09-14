@@ -1,0 +1,195 @@
+/* HTML SETTINGS*/
+html {
+	font-family: "segoeUI", sans-serif;
+}
+body {
+	background-image: url(https://images8.alphacoders.com/679/679478.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+/*-------------------*/
+
+/*Header*/
+header {
+	color: #2d112a;
+	font-size: 25px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	padding-left: 5px;
+	position: relative;
+}
+/*-------------------*/
+
+/*Navigator*/
+nav {
+	font-size: 30px;
+	height: 66px;
+	line-height: 65px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #ffdcc8;
+	margin-bottom: 5px;
+	clear: both;
+	position: fixed;
+}
+/*-------------------*/
+
+/*Main*/
+main {
+	background-color: #2d112a;
+	color: white;
+	margin-top: 75px;
+	margin-bottom: 5px;
+	margin-left: 200px;
+	padding-right: 5px;
+	padding-left: 5px;
+	position: relative;
+}
+a {
+	text-decoration: none;
+	color: #2d112a;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	margin-right: 10px;
+}
+a:hover {
+	color: #fe6b3f;
+
+}
+a:active{
+	color: #7e0030;
+}
+ul li {
+	margin-left: 140px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+h1 {
+	color: #ffdcc8;
+}
+label.title {
+	width: 100px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+input.value {
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	width: 400px;
+}
+p.description {
+	margin-left: 140px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+/*-------------------*/
+/* Footer */
+footer {
+	padding: 1em;
+    color: #ffdcc8;
+    background-color: #FFFFFF0;
+    clear: left;
+    text-align: center;
+}
+/*-------------------*/
+/*Displaying Classes*/
+@media only screen and (max-width: 600px) {
+  .phone {
+    position: relative;
+  }
+}
+@media only screen and (max-width: 600px) {
+	.phone-content {
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-top: 5px;
+	}
+}
+@media only screen and (max-width: 600px) {
+  .phone-hide {
+    display: none;
+  }
+}
+/*-------------------*/
+
+/*Classes*/
+.name {
+	font-size: 20px;
+	float: left;
+	margin-top: 2px;
+	margin-left: 5px;
+}
+.avatar:hover {
+	opacity: 0.75;
+}
+.avatar {
+	border: solid;
+	border-color: #2d112a; 
+	float: left;
+}
+.avatar:active {
+	border: solid;
+	border-color: #7e0030; 
+}
+.sub-btn {
+	margin-left: 50px;
+}
+.container {
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+}
+.portrait {
+	float: left;
+	margin-right: 5px;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e0;
+  border: solid;
+  border-color: #ffdcc8;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.25s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button-small {
+  font-size: 18px;
+  width: 100px;
+}
+.button:active {
+	border-color: #7e0030;
+}
+.button:hover {
+  padding-right: 25px;
+  padding-left: 25px;
+  border-color: #ff583d;
+}
+
+.button:hover:after {
+  opacity: 1;
+  right: 0;
+}
+.footer-logo {
+	filter: invert(100%);
+}
+/*-------------------*/
