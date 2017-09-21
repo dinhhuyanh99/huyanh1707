@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MyTube Alpha</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/modified-materialize.css">
+	<link rel="shortcut icon" href="img/favicon.ico"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<nav id="top-page" class="nav-extended white">
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo center"><img src="img/logo.png" alt="logo" width="80"></a>
+			<a href="#" data-activates="slide-out" class="hide-on-large-only button-collapse red-text waves-effect"><i class="material-icons">menu</i></a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+			<li><a href="#add-video" class="btn red white-text waves-effect waves-ripple modal-trigger">Thêm Video</a></li>
+			</ul>
+			<ul id="slide-out" class="side-nav">
+				<li><div class="user-view">
+						<div class="background">
+							<img src="img/background2.jpg" width="300" height="160">
+						</div>
+						<a href="#!user"><img class="circle" src="img/mofu.png"></a>
+						<a href="#!name"><span class="white-text name">Đinh Huy Anh</span></a>
+						<a href="#!email"><span class="white-text email">dinhhuyanh99@gmail.com</span></a>
+					</div></li>
+				<li><a href="#add-video" class="btn red white-text waves-effect waves-ripple modal-trigger">Thêm Video</a></li>
+				<li><div class="divider"></div></li>
+				<li><a class="subheader">Alpha Build 1.0.2</a></li>
+				<li><a class="waves-effect" href="#">Trang web đang thử nghiệm</a></li>
+			</ul>
+		</div>
+		<div class="nav-content row">
+			<ul class="tabs tabs-transparent">
+			<li class="tab col s3"><a href="#home" class="red-text waves-effect waves-ripple waves-red"><i class="material-icons">home</i></a></li>
+			<li class="tab col s3"><a href="#user-account" class="red-text waves-effect waves-ripple waves-red"><i class="material-icons">account_circle</i></a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main>
+		<!-- Home -->
+		<section>
+			<div id="home">
+				<div class="row" id="videos">
+					<!-- start showing video -->
+					
+					<!-- stop showing vid -->
+				</div>
+				<div class="fixed-action-btn">
+					<a href="#top-page" id="back-to-top" class="btn-floating btn-large red waves-effect waves-ripple waves-light">
+					<i class="large material-icons">arrow_upward</i>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- Home -->
+
+		<!-- User -->
+		<section>
+			<div id="user-account">
+				<section>
+					<h1>Phần này của trang đang được hoàn thiện!</h1>
+					<h3>Mọi đóng góp về ý tưởng vui lòng gửi qua skype</h3>
+				</section>
+			</div>
+		</section>
+		<!-- User -->
+
+		<!-- Modal Overlay -->
+		<section>
+			<div id="add-video" class="modal modal-fixed-footer">
+				<div class="modal-content">
+					<h4>Thêm video</h4>
+					<div class="row">
+						<form class="col s12" id="add-video-form">
+							<div class="row">
+								<div class="input-field col s6">
+									<input type="text" id="video-id" name="videoId" required>
+									<label for="video-id">Video ID</label>
+									<span id="video-id-alert" class="msg-error"></span>
+								</div>
+								<div class="input-field col s6">
+									<input type="text" id="video-name" name="name" required>
+									<label for="video-name">Video Name</label>
+									<span id="video-name-alert" class="msg-error"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<textarea cols="50" rows="20"  class="materialize-textarea" id="description" name="description"></textarea>
+									<label for="description">Description</label>
+									<span id="video-desc-alert" class="msg-error"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<input type="text" id="keywords" name="keywords">
+									<label for="keywords">Keywords</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s6">
+									<div class="select-wrapper">
+										<select>
+											<option value="" disabled selected>Choose one option</option>
+											<option value="Video">Video</option>
+											<option value="Music">Music</option>
+											<option value="Lifestyles">Lifestyles</option>
+										</select>
+										<label>Category</label>
+									</div>
+								</div>
+								<div class="input-field col s6">
+									<div class="select-wrapper">
+										<select multiple>
+											<option value="" disabled selected>Choose one option</option>
+											<option value="Game">Game</option>
+											<option value="Music">Music</option>
+											<option value="Developer">Developer</option>
+											<option value="Others">Others</option>
+										</select>
+										<label>Genres</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<input type="text" id="authorName" name="authorName">
+									<label for="authorName">Author's Name</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<input type="email" id="authorEmail" name="authorEmail" class="validate">
+									<label for="authorName" data-error="Invalid Email" data-success="Valid Email">Author's Email</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<input type="text" id="authorBirthday" name="authorBirthday">
+									<label for="authorBirthday">Author's Birthday</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a class="left modal-action modal-close btn red waves-effect waves-ripple waves-light">Close</a>
+					<a class="btn red waves-effect waves-ripple waves-light" onclick="resetForm()">Reset</a>
+					<a class="btn waves-effect waves-ripple waves-light" onclick="handleForm()">Submit</a>
+
+				</div>
+			</div>
+		</section>
+		<!-- Modal Overlay -->
+
+		<!-- View Modal Overlay -->
+		<section>
+			<div class="video-player-container">
+				<div id="player-video-modal" class="modal-player">
+					<a class="modal-trigger modal-close" onclick="closePlayer()"><i class="material-icons white-text waves-effect waves-ripple waves-light right">clear</i></a>
+					<div class="modal-content">
+						<div class="video-container" id="video-player">
+							
+						</div>
+					</div>
+					<h4 id="title-video"></h4>
+					<div class="modal-footer" id="player-footer">
+						<p id="playerDescription"></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- View Modal Overlay -->
+	</main>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/modified-materialize.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
